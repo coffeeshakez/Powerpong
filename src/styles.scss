@@ -1,0 +1,79 @@
+
+@import 'frameworkScss';
+@import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
+body{
+    color: white;
+}
+
+.wrapper{
+    
+    padding-top: 3rem;
+}
+
+.wrapper-fluid {
+    background-color: black;
+}
+
+
+.center-text{
+    text-align: center;
+}
+
+
+
+.selected {
+    background-color: $list-item-selected !important;
+    color:black;
+}
+
+
+
+.Rule {
+
+    
+
+    li{
+
+        padding: 1rem;
+        transition: all 0.2s ease-out;
+        margin: 3px;
+        background-color: $list-item-color;
+        border-radius: 10px;
+
+    }
+    
+        li:active{
+          animation-name: bounceIn;
+          animation-duration: 200ms;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+        }
+    
+        li:hover{
+          color: black;
+          background-color: $list-item-hover;
+      }
+}
+
+
+
+@keyframes bounceIn{
+    0%{
+      opacity: 0;
+      transform: scale(1) translate3d(0,0,0);
+    }
+    50%{
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+    80%{
+      opacity: 1;
+      transform: scale(0.89);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1) translate3d(0,0,0);
+    }
+  }

@@ -1,0 +1,16 @@
+
+
+
+<div class="container">
+  <h1> Rules </h1>
+
+<ul class="Rule">
+  <li *ngFor="let rule of rules" 
+      [class.selected]="rule === selectedRule"
+      (click)="onSelect(rule)">
+    <h2 >{{rule.title}}</h2>
+    <p>{{rule.desc}}</p>
+  </li>
+</ul>
+  
+</div>

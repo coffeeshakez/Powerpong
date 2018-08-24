@@ -1,0 +1,30 @@
+
+$list-item-hover: rgb(151, 105, 185);
+$list-item-color: rgb(100, 44, 140);
+$list-item-selected: rgb(204, 241, 129);
+$list-item-text-color: white;
+$list-item-text-color-hover:#60D; 
+
+
+ul li{
+    list-style-type: none;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+html, body, ul, ol {
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-family: arial;
+}
+
+
+.wrapper{
+    height: 100%;
+}
+
+
