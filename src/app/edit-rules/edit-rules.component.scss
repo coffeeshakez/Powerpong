@@ -4,7 +4,6 @@
 @import '../../frameworkScss';
 
 
-
 .new-rule{
     height: auto;
     width: 50px;
@@ -19,7 +18,7 @@
 }
 
 .new-rule:hover{
-    border-radius: 10%;
+    border-radius: 0%;
     width: 70px;
 }
 
@@ -32,9 +31,6 @@
     content: "Add";
     opacity: 1;
 }
-
-
-
 
 .popup {
     margin: 70px auto;

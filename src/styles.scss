@@ -4,6 +4,28 @@
 
 
 body{
+    height: 100%;
+}
+
+.nav-link{
+    background-color: $list-item-color;
+    color: white;
+}
+
+.nav-link:active{
+    background-color: $list-item-selected;
+}
+
+.nav-link:hover{
+    background-color: $list-item-hover;
+    color: white;
+}
+
+h1, h2, label{
+    color:white;
+}
+
+h1 {
     color: white;
 }
 
@@ -16,32 +38,23 @@ body{
     background-color: black;
 }
 
-
 .center-text{
     text-align: center;
 }
-
-
 
 .selected {
     background-color: $list-item-selected !important;
     color:black;
 }
 
-
-
 .Rule {
 
-    
-
     li{
-
         padding: 1rem;
         transition: all 0.2s ease-out;
         margin: 3px;
         background-color: $list-item-color;
-        border-radius: 10px;
-
+        
     }
     
         li:active{
@@ -56,8 +69,6 @@ body{
           background-color: $list-item-hover;
       }
 }
-
-
 
 @keyframes bounceIn{
     0%{

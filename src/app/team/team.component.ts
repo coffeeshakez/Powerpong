@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
+  
+  team = "test";
+  teamName: string;
+
   constructor() { }
+
 
   ngOnInit() {
   }

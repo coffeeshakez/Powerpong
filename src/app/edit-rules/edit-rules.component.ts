@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RuleService } from '../rule.service';
 import { Rule } from '../Rule';
-import { Observable } from 'rxjs';
-
 
 @Component({
   selector: 'app-edit-rules',
@@ -13,7 +11,6 @@ import { Observable } from 'rxjs';
 export class EditRulesComponent implements OnInit {
   
   rules: Rule[];
-  
   
   powerRules: Rule[];
   cursedRules: Rule[];
@@ -30,7 +27,7 @@ export class EditRulesComponent implements OnInit {
 
   onSubmit(){
     
-    this.updateLists(this.model)
+    this.updateLists(this.model);
     this.rules.push(this.model);
     this.model = new Rule('', '','');
   }
@@ -77,20 +74,20 @@ export class EditRulesComponent implements OnInit {
 
       switch(element.type){
         case 'Power': 
-      powerRules.push(element);
-      break;
+          powerRules.push(element);
+          break;
 
-      case 'Counter': 
-      counterRules.push(element);
-      break;
+        case 'Counter': 
+          counterRules.push(element);
+          break;
 
-      case 'Normal': 
-      normalRules.push(element);
-      break;
+        case 'Normal': 
+          normalRules.push(element);
+          break;
 
-      case 'Cursed': 
-      cursedRules.push(element);
-      break;
+        case 'Cursed': 
+          cursedRules.push(element);
+          break;
       }
     });
 
