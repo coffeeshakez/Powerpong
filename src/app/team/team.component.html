@@ -4,6 +4,12 @@
 
     <h1>Team {{team}} sdafa</h1>
     <div class="content">
+
+      <p style="color: white;">Meldinger</p>
+      <div *ngFor="let message of messages" style="color: white;">
+          Melding: {{message.text}}
+
+      </div>
       
   </div>
 </div>

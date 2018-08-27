@@ -12,6 +12,11 @@ import { TeamComponent } from './team/team.component';
 import { EditPaneComponent } from './edit-pane/edit-pane.component';
 import { RuleFormComponent } from './rule-form/rule-form.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
+import { ChatService } from './chat-service.service';
+import { WelcomeScreenComponent } from './welcome-screen/welcome-screen.component';
+
+const config: SocketIoConfig = { url:'http://localhost:5000', options: {}};
 
 
 
@@ -25,15 +30,19 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TeamComponent,
     EditPaneComponent,
     RuleFormComponent,
+    WelcomeScreenComponent,
     
   ],
   imports: [
     BrowserModule,
+    SocketIoModule.forRoot(config),
     AppRoutingModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    
+
   ],
-  providers: [],
+  providers: [ChatService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

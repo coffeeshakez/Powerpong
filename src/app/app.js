@@ -17,7 +17,7 @@ io.on('connection', (socket) => {
     // using `io.emit()`
     socket.on('message', (message) => {
         console.log("Message Received: " + message);
-        io.emit('message', {type:'new-message', text: message});    
+        io.emit('message', {type:'new-message', text: "test1"});
     });
 });
 
@@ -25,3 +25,5 @@ io.on('connection', (socket) => {
 http.listen(5000, () => {
     console.log('started on port 5000');
 });
+
+
